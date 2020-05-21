@@ -163,6 +163,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.4"
+  intl:
+    dependency: "direct main"
+    description:
+      name: intl
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.16.1"
   js:
     dependency: transitive
     description:
@@ -245,6 +252,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.9.3"
+  steps_indicator:
+    dependency: "direct main"
+    description:
+      name: steps_indicator
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.3.1"
   stream_channel:
     dependency: transitive
     description:

@@ -9,11 +9,11 @@ final workouts = [
     strength: 3
   ),
   WorkOut(
-    name: "Muscle & Strength Starter",
+    name: "Muscle & Strength",
     time: "5 weeks",
     imagePath: "assets/muscle&strength.jpg",
     cardio: 1,
-    strength: 2
+    strength: 3
   ),
   WorkOut(
     name: "Fit Life Starter",
