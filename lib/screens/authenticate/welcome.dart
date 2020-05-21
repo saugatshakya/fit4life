@@ -11,6 +11,7 @@ class WelcomePage extends StatefulWidget {
 
 class _WelcomePageState extends State<WelcomePage> {
   final AuthService _auth = AuthService();
+  bool loading = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -63,16 +64,14 @@ class _WelcomePageState extends State<WelcomePage> {
                  margin: EdgeInsets.only(bottom:20),
                  child: FlatButton(
                   onPressed: ()async{
+                    setState(() => loading = true);                  
                     dynamic result = await _auth.signInAnon();
                     if (result == null){
+                      setState(() => loading = false);                  
                       print('error signing in');
                     }
                     else{
                       print('signed in');
-                      print(result.uid);
-                      print(result.caloriesBurnt);
-                      print(result.minutes);
-                      print(result.noOfExercise);
                     }
                   },
                   child: Text('Sign in as a Guest',style: TextStyle(color:Colors.white),),
