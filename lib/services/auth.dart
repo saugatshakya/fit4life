@@ -19,7 +19,7 @@ class AuthService {
         AuthResult result = await _auth.signInAnonymously();
         FirebaseUser user = result.user;
         //create a new document for the user with uid
-        await DatabaseService(uid: user.uid).updateUserData([],0, 0, 0);
+        await DatabaseService(uid: user.uid).updateUserData(0, 0, 0);
         return _userFromFirebaseUser(user);
     }
     catch(e) {
@@ -33,7 +33,7 @@ class AuthService {
       AuthResult result = await _auth.createUserWithEmailAndPassword(email: email, password: password);
       FirebaseUser user = result.user;
       //create a new document for the user with uid
-      await DatabaseService(uid: user.uid).updateUserData([],0, 0, 0);
+      await DatabaseService(uid: user.uid).updateUserData(0, 0, 0);
       return _userFromFirebaseUser(user);      
     }
     catch(e)

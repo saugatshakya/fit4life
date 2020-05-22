@@ -6,7 +6,10 @@ final workouts = [
     time: "12 weeks",
     imagePath: "assets/fullbodygainer.jpg",
     cardio: 1,
-    strength: 3
+    strength: 3,
+    calories: 71,
+    minutes: 20,
+    exercises: 28
   ),
   WorkOut(
     name: "Muscle & Strength",
