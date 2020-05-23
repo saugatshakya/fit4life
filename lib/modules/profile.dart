@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:loginapp/data/workout.dart';
 import 'package:loginapp/models/user.dart';
+import 'package:loginapp/shared/loading.dart';
 import 'package:loginapp/widgets/card.dart';
 import 'package:loginapp/widgets/mcard.dart';
 import 'package:intl/intl.dart';
@@ -41,9 +42,9 @@ class Profile extends StatelessWidget {
                   Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children:[
-                    Column(children:[Text("Workouts",style:TextStyle(color:Colors.white,fontSize: 26,fontWeight: FontWeight.w600)),Text(userData.noOfExercise.toString(),style:TextStyle(color:Colors.white,fontSize: 32,fontWeight: FontWeight.w600))]),
-                    Column(children:[Text("Calories",style:TextStyle(color:Colors.white,fontSize: 26,fontWeight: FontWeight.w600)),Text(userData.calories.toString(),style:TextStyle(color:Colors.white,fontSize: 32,fontWeight: FontWeight.w600))]),
-                    Column(children:[Text("Minutes",style:TextStyle(color:Colors.white,fontSize: 26,fontWeight: FontWeight.w600)),Text(userData.minutes.toString(),style:TextStyle(color:Colors.white,fontSize: 32,fontWeight: FontWeight.w600))])
+                    Column(children:[Text(userData.noOfExercise.toString(),style:TextStyle(color:Colors.white,fontSize: 32,fontWeight: FontWeight.w600)),Text("Workouts",style:TextStyle(color:Colors.white,fontSize: 26,fontWeight: FontWeight.w600))]),
+                    Column(children:[Text(userData.calories.toString(),style:TextStyle(color:Colors.white,fontSize: 32,fontWeight: FontWeight.w600)),Text("Calories",style:TextStyle(color:Colors.white,fontSize: 26,fontWeight: FontWeight.w600)),]),
+                    Column(children:[Text(userData.minutes.toString(),style:TextStyle(color:Colors.white,fontSize: 32,fontWeight: FontWeight.w600)),Text("Minutes",style:TextStyle(color:Colors.white,fontSize: 26,fontWeight: FontWeight.w600)),])
                   ]
                 ),]
               )
@@ -77,7 +78,7 @@ class Profile extends StatelessWidget {
         );
           }
           else{
-
+            return Loading();
           }
           
           });

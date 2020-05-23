@@ -1,8 +1,12 @@
+import 'package:loginapp/models/exercise.dart';
+
 class WorkOut{
-  final String name, time, imagePath;
+  final String id,name, time, imagePath;
   final int cardio, strength, calories, minutes, exercises;
+  final List<Exercise> exercise;
 
   WorkOut({
+    this.id,
     this.name,
     this.time,
     this.imagePath,
@@ -10,6 +14,7 @@ class WorkOut{
     this.strength,
     this.calories,
     this.exercises,
-    this.minutes
+    this.minutes,
+    this.exercise
   });
 }

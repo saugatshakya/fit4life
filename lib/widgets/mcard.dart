@@ -30,9 +30,9 @@ class Mcard extends StatelessWidget {
           Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children:[
-          Text('Cardio: ',style:TextStyle(color:Colors.white,fontSize: 20,fontWeight: FontWeight.w600)),StepsIndicator(nbSteps:3,lineLength:10,unselectedStepColor: Colors.blue,lineThickness:3,selectedStepColorIn: Colors.blue,selectedStepSize: 10,),
+          Text('Cardio: ',style:TextStyle(color:Colors.white,fontSize: 20,fontWeight: FontWeight.w600)),
           SizedBox(width:15),
-          Text('Strength: ',style:TextStyle(color:Colors.white,fontSize: 20,fontWeight: FontWeight.w600)),StepsIndicator(nbSteps:3,lineLength:10,unselectedStepColor: Colors.blue,lineThickness:3,selectedStepColorIn: Colors.blue,selectedStepSize: 10,),
+          Text('Strength: ',style:TextStyle(color:Colors.white,fontSize: 20,fontWeight: FontWeight.w600)),
           ]),
           Row(children:[
             Container(),
@@ -64,9 +64,9 @@ class Mcard extends StatelessWidget {
           Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children:[
-          Text('Cardio: ',style:TextStyle(color:Colors.white,fontSize: 20,fontWeight: FontWeight.w600)),StepsIndicator(nbSteps:3,lineLength:10,unselectedStepColor: Colors.blue,lineThickness:3,selectedStepColorIn: Colors.blue,selectedStepSize: 10,),
+          Text('Cardio: ',style:TextStyle(color:Colors.white,fontSize: 20,fontWeight: FontWeight.w600)),
           SizedBox(width:15),
-          Text('Strength: ',style:TextStyle(color:Colors.white,fontSize: 20,fontWeight: FontWeight.w600)),StepsIndicator(nbSteps:3,lineLength:10,unselectedStepColor: Colors.blue,lineThickness:3,selectedStepColorIn: Colors.blue,selectedStepSize: 10,),
+          Text('Strength: ',style:TextStyle(color:Colors.white,fontSize: 20,fontWeight: FontWeight.w600)),
           ]),
           Row(children:[
             Container(),
