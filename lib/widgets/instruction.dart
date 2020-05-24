@@ -14,15 +14,16 @@ class Instruction extends StatelessWidget {
         width: MediaQuery.of(context).size.width,
         child: Column(
           children: <Widget>[
-            Text(exercise.name,style: TextStyle(fontSize: 20,fontWeight: FontWeight.w500),),
-            SizedBox(height: 10),
+            Text(exercise.name,style: TextStyle(fontSize: 25,fontWeight: FontWeight.w500),),
+            SizedBox(height: 15),
             Image.asset(exercise.videoPath),
+            SizedBox(height:20),
             Text("Hints",style: TextStyle(fontSize:17,fontWeight: FontWeight.w500),),
-            SizedBox(height: 10),
+            SizedBox(height: 12),
             Text(exercise.hint,style: TextStyle(fontSize: 16),),
-            SizedBox(height: 10),
+            SizedBox(height: 20),
             Text("Breathing",style: TextStyle(fontSize:17,fontWeight: FontWeight.w500),),
-            SizedBox(height: 10),
+            SizedBox(height: 12),
             Text(exercise.breathing,style: TextStyle(fontSize:16),)      
           ],
         ),

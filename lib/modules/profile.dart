@@ -38,13 +38,13 @@ class Profile extends StatelessWidget {
               child:Column(
                   children:[Text(
                   "${DateFormat("EEEE").format(today)},${DateFormat("d MMMM").format(today)}",style:TextStyle(color:Colors.white,fontSize: 16,fontWeight: FontWeight.w600)),
-                  SizedBox(height:10),
+                  SizedBox(height:20),
                   Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children:[
-                    Column(children:[Text(userData.noOfExercise.toString(),style:TextStyle(color:Colors.white,fontSize: 32,fontWeight: FontWeight.w600)),Text("Workouts",style:TextStyle(color:Colors.white,fontSize: 26,fontWeight: FontWeight.w600))]),
-                    Column(children:[Text(userData.calories.toString(),style:TextStyle(color:Colors.white,fontSize: 32,fontWeight: FontWeight.w600)),Text("Calories",style:TextStyle(color:Colors.white,fontSize: 26,fontWeight: FontWeight.w600)),]),
-                    Column(children:[Text(userData.minutes.toString(),style:TextStyle(color:Colors.white,fontSize: 32,fontWeight: FontWeight.w600)),Text("Minutes",style:TextStyle(color:Colors.white,fontSize: 26,fontWeight: FontWeight.w600)),])
+                    Column(children:[Text(userData.noOfExercise.toString(),style:TextStyle(color:Colors.white,fontSize: 32,fontWeight: FontWeight.w600)),SizedBox(height:5),Text("Workouts",style:TextStyle(color:Colors.white,fontSize: 26,fontWeight: FontWeight.w600))]),
+                    Column(children:[Text(userData.calories.toString(),style:TextStyle(color:Colors.white,fontSize: 32,fontWeight: FontWeight.w600)),SizedBox(height:5),Text("Calories",style:TextStyle(color:Colors.white,fontSize: 26,fontWeight: FontWeight.w600)),]),
+                    Column(children:[Text(userData.minutes.toString(),style:TextStyle(color:Colors.white,fontSize: 32,fontWeight: FontWeight.w600)),SizedBox(height:5),Text("Minutes",style:TextStyle(color:Colors.white,fontSize: 26,fontWeight: FontWeight.w600)),])
                   ]
                 ),]
               )

@@ -108,7 +108,7 @@ final fullbodygainer = [
   Exercise(
     name: "Skaters",
     imagePath: "assets/skaters.jpg",
-    videoPath: "assets/assets/skaters.gif",
+    videoPath: "assets/skaters.gif",
     reps: "35",
     hint: "Start in a small squat. Jump sideways to the left, landing on your left leg. Bring your right leg behind to your left ankle, and don't let it touch the floor. Reverse direction by jumping to the right with your right leg. Swing the arms in front of the bent knee and leap the back leg forward to switch sides in a skating motion. Arms alternate as you switch sides like a speed sakter.",
     breathing: "Inhale while changing sides. Exhale while coming back to the centre/starting position."

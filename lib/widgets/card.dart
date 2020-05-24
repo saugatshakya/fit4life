@@ -18,7 +18,7 @@ class WorkOutCard extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.max,
             children:[
-              Flexible(fit: FlexFit.tight,child: ClipRRect(borderRadius: BorderRadius.vertical(top:Radius.circular(20)),child: Image.asset(workout.imagePath,width:150,fit: BoxFit.fill))),
+              Flexible(fit: FlexFit.tight,child: ClipRRect(borderRadius: BorderRadius.vertical(top:Radius.circular(20)),child: Image.asset(workout.imagePath,width:150,fit: BoxFit.cover))),
               Text(workout.time,style: TextStyle(fontSize: 12,fontWeight: FontWeight.w300),),
               Flexible(fit: FlexFit.tight,child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,

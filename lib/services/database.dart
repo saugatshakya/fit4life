@@ -15,6 +15,14 @@ class DatabaseService {
       'minutes': minutes
     });
   }
+
+  Future updateFitnessData(int exInit,int ex, int caInit,int ca ,int miInit, int mi)async {
+    return await fitnessCollection.document(uid).setData({
+      'noOfExercise': exInit +  ex,
+      'calories': caInit + ca,
+      'minutes': miInit + mi
+    });
+  }
   
   Stream<UserData> get userData {
     return fitnessCollection.document(uid).snapshots().map(_userDataFromSnapshot);
