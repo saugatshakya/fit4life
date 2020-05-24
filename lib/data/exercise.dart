@@ -108,7 +108,7 @@ final fullbodygainer = [
   Exercise(
     name: "Skaters",
     imagePath: "assets/skaters.jpg",
-    videoPath: "assets/assets/skaters.gif",
+    videoPath: "assets/skaters.gif",
     reps: "35",
     hint: "Get into a kneeling push up position with your shoulders directly above your wrists. Now place your hands close together so your thumbs and index fingers form a triangle on the floor. Perform push-ups with your hands in this position.",
     breathing: "Breathe in going down. Breathe out going up"

@@ -43,7 +43,7 @@ class List extends StatelessWidget {
                   scrollDirection: Axis.vertical,
                   child: Column(
                   children:[
-                    for (int i = 0; i< workout.exercise.length; i++)GestureDetector(onTap: (){ Navigator.of(context).push(MaterialPageRoute(builder: (context)=> Instruction(exercise: this.workout.exercise[i])));},child: Container(color: Colors.indigo[400],height: 70,padding: EdgeInsets.fromLTRB(10,5,5,5),child:Row(children:[Container(child: ClipRRect(borderRadius: BorderRadius.all(Radius.circular(5)),child: Image.asset(workout.exercise[i].imagePath,fit: BoxFit.fill))),SizedBox(width:10),Container(width: 220,child: Text(workout.exercise[i].name,style:TextStyle(fontSize:16,color:Colors.white ))),Text(workout.exercise[i].reps,style:TextStyle(fontSize:16,color:Colors.white)),Text(" reps",style:TextStyle(fontSize:16,color: Colors.white))])))
+                    for (int i = 0; i< workout.exercise.length; i++)GestureDetector(onTap: (){ Navigator.of(context).push(MaterialPageRoute(builder: (context)=> Instruction(exercise: this.workout.exercise[i])));},child: Container(color: Colors.indigo[400],height: 70,padding: EdgeInsets.fromLTRB(10,5,5,5),child:Row(children:[Container(child: ClipRRect(borderRadius: BorderRadius.all(Radius.circular(5)),child: Image.asset(workout.exercise[i].imagePath,fit: BoxFit.fill))),SizedBox(width:10),Container(width: MediaQuery.of(context).size.width*0.53,child: Text(workout.exercise[i].name,style:TextStyle(fontSize:16,color:Colors.white ))),Text(workout.exercise[i].reps,style:TextStyle(fontSize:16,color:Colors.white)),Text(" reps",style:TextStyle(fontSize:16,color: Colors.white))])))
                   ]
                 ),),
                     )),            

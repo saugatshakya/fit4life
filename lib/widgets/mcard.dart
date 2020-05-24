@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:steps_indicator/steps_indicator.dart';
 
 class Mcard extends StatelessWidget {
   @override
@@ -9,6 +8,7 @@ class Mcard extends StatelessWidget {
     scrollDirection: Axis.horizontal,
       child: Row(
       children: [Container(
+      height: MediaQuery.of(context).size.height*0.25,
       margin: EdgeInsets.only(bottom:10,left:32,right:16),
       padding: EdgeInsets.all(15),
       decoration: BoxDecoration(
@@ -43,6 +43,7 @@ class Mcard extends StatelessWidget {
     ),
 
     Container(
+      height: MediaQuery.of(context).size.height*0.25,
       margin: EdgeInsets.only(bottom:10,right:32),
       padding: EdgeInsets.all(15),
       decoration: BoxDecoration(
