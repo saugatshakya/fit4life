@@ -14,7 +14,7 @@ class Instruction extends StatelessWidget {
         width: MediaQuery.of(context).size.width,
         child: Column(
           children: <Widget>[
-            Text(exercise.name,style: TextStyle(fontSize: 18,fontWeight: FontWeight.w500),),
+            Text(exercise.name,style: TextStyle(fontSize: 20,fontWeight: FontWeight.w500),),
             SizedBox(height: 10),
             Image.asset(exercise.videoPath),
             Text("Hints",style: TextStyle(fontSize:17,fontWeight: FontWeight.w500),),
