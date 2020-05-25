@@ -3,7 +3,6 @@ import 'package:loginapp/models/workout.dart';
 
 final workouts = [
   WorkOut(
-    id: "fullbodygainer",
     name: "Full Body Gainer",
     time: "12 weeks",
     imagePath: "assets/fullbodygainer.jpg",
@@ -15,7 +14,6 @@ final workouts = [
     exercise: [for (int i = 0; i< fullbodygainer.length; i++)fullbodygainer[i]]
   ),
   WorkOut(
-    id: "muscle&strength",
     name: "Muscle & Strength",
     time: "5 weeks",
     imagePath: "assets/muscle&strength.jpg",
@@ -26,7 +24,6 @@ final workouts = [
     exercises: 28
   ),
   WorkOut(
-    id: "fitlifestarter",
     name: "Fit Life Starter",
     time: "5 weeks",
     imagePath: "assets/fitlife.jpg",
@@ -37,7 +34,6 @@ final workouts = [
     exercises: 28
   ),
   WorkOut(
-    id: "weightlossstarter",
     name: "Weight Loss Starter",
     time: "5 weeks",
     imagePath: "assets/weightloss.jpg",
@@ -46,5 +42,74 @@ final workouts = [
     calories: 71,
     minutes: 20,
     exercises: 28
+  ),
+];
+
+final specialworkouts = [
+  WorkOut(
+    name: "Full Body",
+    time: "18 weeks",
+    imagePath: "assets/fullbodygainer.jpg",
+    cardio: 2,
+    strength: 3,
+    calories: 34,
+    minutes: 10,
+    exercises: 12,
+    exercise: [for (int i = 0; i< fullbodygainer.length; i++)fullbodygainer[i]]
+  ),
+  WorkOut(
+    name: "Insane Six Pack",
+    time: "12 weeks",
+    imagePath: "assets/fullbodygainer.jpg",
+    cardio: 3,
+    strength: 2,
+    calories: 37,
+    minutes: 10,
+    exercises: 14,
+    exercise: [for (int i = 0; i< fullbodygainer.length; i++)fullbodygainer[i]]
+  ),
+  WorkOut(
+    name: "Strong Back",
+    time: "12 weeks",
+    imagePath: "assets/fullbodygainer.jpg",
+    cardio: 1,
+    strength: 3,
+    calories: 35,
+    minutes: 10,
+    exercises: 13,
+    exercise: [for (int i = 0; i< fullbodygainer.length; i++)fullbodygainer[i]]
+  ),
+  WorkOut(
+    name: "Full Body Streetching",
+    time: "22 weeks",
+    imagePath: "assets/fullbodygainer.jpg",
+    cardio: 2,
+    strength: 2,
+    calories: 10,
+    minutes: 10,
+    exercises: 13,
+    exercise: [for (int i = 0; i< fullbodygainer.length; i++)fullbodygainer[i]]
+  ),
+  WorkOut(
+    name: "Upper Body Streetching",
+    time: "22 weeks",
+    imagePath: "assets/fullbodygainer.jpg",
+    cardio: 2,
+    strength: 2,
+    calories: 10,
+    minutes: 10,
+    exercises: 12,
+    exercise: [for (int i = 0; i< fullbodygainer.length; i++)fullbodygainer[i]]
+  ),
+  WorkOut(
+    name: "Lower Body Streetching",
+    time: "22 weeks",
+    imagePath: "assets/fullbodygainer.jpg",
+    cardio: 2,
+    strength: 2,
+    calories: 10,
+    minutes: 10,
+    exercises: 12,
+    exercise: [for (int i = 0; i< fullbodygainer.length; i++)fullbodygainer[i]]
   ),
 ];

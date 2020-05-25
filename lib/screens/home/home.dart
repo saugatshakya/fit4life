@@ -1,16 +1,47 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:loginapp/modules/exerciselist.dart';
+import 'package:loginapp/modules/nutrition.dart';
 import 'package:loginapp/modules/profile.dart';
+import 'package:loginapp/modules/workout.dart';
 import 'package:loginapp/services/auth.dart';
 import 'package:loginapp/services/database.dart';
 import 'package:loginapp/shared/loading.dart';
 import 'package:provider/provider.dart';
 import 'package:loginapp/models/user.dart';
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
+  @override
+  _HomeState createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
   final AuthService _auth = AuthService();
+
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
+  int _currentIndex = 0;
+
+  final tabs = [
+    Profile(),
+    WorkOut(),
+    ExerciseList(),
+    Nutrition()
+  ];
+
+  final color = [
+    Colors.indigo[800],
+    Colors.red[800],
+    Colors.green[800],
+    Colors.orange[800]
+  ];
+
+  final backgroundcolor = [
+    Colors.indigo[300],
+    Colors.red[300],
+    Colors.green[300],
+    Colors.orange[300]
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -26,8 +57,9 @@ class Home extends StatelessWidget {
       if(userData.name != "")
       {
         return Scaffold(
-      backgroundColor: Colors.indigo[300],
+      backgroundColor: backgroundcolor[_currentIndex],
       appBar: AppBar(
+        backgroundColor: color[_currentIndex],
         title:Text('Get Fit'),
         actions: <Widget>[
           FlatButton.icon(onPressed:()async{await _auth.signOut();}, icon:Icon(Icons.person, color: Colors.white, size: 30), label: Text('logout',style: TextStyle(color:Colors.white,fontSize: 16)))
@@ -36,6 +68,8 @@ class Home extends StatelessWidget {
       bottomNavigationBar: ClipRRect(
         borderRadius: BorderRadius.vertical(top:Radius.circular(40)),
           child: BottomNavigationBar(
+          currentIndex: _currentIndex,
+          onTap: (index){setState(() {_currentIndex = index; });},
           selectedIconTheme: IconThemeData(
             size: 30,
             color:Colors.white
@@ -46,28 +80,28 @@ class Home extends StatelessWidget {
           ),
           items:[
           BottomNavigationBarItem(
-          backgroundColor: Colors.indigo,
+          backgroundColor: Colors.indigo[800],
             icon:Icon(
               Icons.calendar_today
             ),
             title:Text("Plan")
           ),
           BottomNavigationBarItem(
-          backgroundColor: Colors.indigo,
+          backgroundColor: Colors.red[800],
             icon:Icon(
               Icons.fitness_center
             ),
             title:Text("Workouts")
           ),
           BottomNavigationBarItem(
-          backgroundColor: Colors.indigo,
+          backgroundColor: Colors.green[800],
             icon:Icon(
               Icons.list
             ),
             title:Text("Exercise List")
           ),
           BottomNavigationBarItem(
-          backgroundColor: Colors.indigo,
+          backgroundColor: Colors.orange[800],
             icon:Icon(
               Icons.fastfood
             ),
@@ -75,7 +109,7 @@ class Home extends StatelessWidget {
           ),
         ]),
       ),
-      body: Profile(),
+      body: tabs[_currentIndex],
         );}
       else
       {
