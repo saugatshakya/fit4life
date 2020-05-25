@@ -15,7 +15,7 @@ class Profile extends StatelessWidget {
     final height = MediaQuery.of(context).size.height;
     final today = DateTime.now();
     return StreamBuilder<UserData>(
-          stream: DatabaseService(uid: user.uid).userData,
+          stream: DatabaseService(uid: user.uid).fitnessData,
           builder:(context,snapshot) {
           if(snapshot.hasData){
             UserData userData = snapshot.data;
@@ -32,22 +32,29 @@ class Profile extends StatelessWidget {
             borderRadius: const BorderRadius.vertical(
               bottom: const Radius.circular(40),
             ),
-            child:Container(
-              color:Colors.indigo,
-              padding:EdgeInsets.only(top:30),
-              child:Column(
-                  children:[Text(
-                  "${DateFormat("EEEE").format(today)},${DateFormat("d MMMM").format(today)}",style:TextStyle(color:Colors.white,fontSize: 16,fontWeight: FontWeight.w600)),
-                  SizedBox(height:20),
-                  Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children:[
-                    Column(children:[Text(userData.noOfExercise.toString(),style:TextStyle(color:Colors.white,fontSize: 32,fontWeight: FontWeight.w600)),SizedBox(height:5),Text("Workouts",style:TextStyle(color:Colors.white,fontSize: 26,fontWeight: FontWeight.w600))]),
-                    Column(children:[Text(userData.calories.toString(),style:TextStyle(color:Colors.white,fontSize: 32,fontWeight: FontWeight.w600)),SizedBox(height:5),Text("Calories",style:TextStyle(color:Colors.white,fontSize: 26,fontWeight: FontWeight.w600)),]),
-                    Column(children:[Text(userData.minutes.toString(),style:TextStyle(color:Colors.white,fontSize: 32,fontWeight: FontWeight.w600)),SizedBox(height:5),Text("Minutes",style:TextStyle(color:Colors.white,fontSize: 26,fontWeight: FontWeight.w600)),])
-                  ]
-                ),]
-              )
+            child:GestureDetector(
+              onTap:(){Navigator.pushNamed(context, 'profile');},
+                child: Hero(
+                  tag: "profile",
+                  child: Container(
+                  color:Colors.indigo,
+                  padding:EdgeInsets.only(top:10),
+                  child:Column(
+                      children:[Text(
+                      "${DateFormat("EEEE").format(today)} , ${DateFormat("d MMMM").format(today)}",style:TextStyle(color:Colors.white,fontSize: 16,fontWeight: FontWeight.w600)),
+                      SizedBox(height:20),
+                      Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children:[
+                        Column(children:[Text(userData.noOfExercise.toString(),style:TextStyle(color:Colors.white,fontSize: 32,fontWeight: FontWeight.w600)),SizedBox(height:5),Text("Workouts",style:TextStyle(color:Colors.white,fontSize: 26,fontWeight: FontWeight.w600))]),
+                        Column(children:[Text(userData.calories.toString(),style:TextStyle(color:Colors.white,fontSize: 32,fontWeight: FontWeight.w600)),SizedBox(height:5),Text("Calories",style:TextStyle(color:Colors.white,fontSize: 26,fontWeight: FontWeight.w600)),]),
+                        Column(children:[Text(userData.minutes.toString(),style:TextStyle(color:Colors.white,fontSize: 32,fontWeight: FontWeight.w600)),SizedBox(height:5),Text("Minutes",style:TextStyle(color:Colors.white,fontSize: 26,fontWeight: FontWeight.w600)),])
+                      ]
+                    ),
+                    IconButton(icon: Icon(Icons.keyboard_arrow_down,color:Colors.white),onPressed :(){Navigator.pushNamed(context, 'profile');})]
+                  )
+              ),
+                ),
             )
           )),
         Positioned(

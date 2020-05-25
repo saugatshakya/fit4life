@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:loginapp/models/user.dart';
 import 'package:loginapp/services/database.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 class AuthService {
 
@@ -20,11 +21,36 @@ class AuthService {
         FirebaseUser user = result.user;
         //create a new document for the user with uid
         await DatabaseService(uid: user.uid).updateUserData(0, 0, 0);
+        await DatabaseService(uid: user.uid).changeUserData("",0,0,0);
         return _userFromFirebaseUser(user);
     }
     catch(e) {
       print(e.toString());
       return null;
+    }
+  }
+
+  //sign in with google
+  Future signInGoogle() async {
+    try {
+      final GoogleSignIn _googleSignIn = GoogleSignIn(
+        scopes: [
+          'email'
+        ],
+        hostedDomain: "",
+        clientId: "",
+      );
+      final FirebaseAuth _auth = FirebaseAuth.instance;
+      final GoogleSignInAccount googleUser = await _googleSignIn.signIn();
+      final GoogleSignInAuthentication googleAuth = await googleUser.authentication;
+
+      final AuthCredential credential = GoogleAuthProvider.getCredential(idToken: googleAuth.idToken, accessToken: googleAuth.accessToken);
+      final FirebaseUser user = (await _auth.signInWithCredential(credential)).user;
+      await DatabaseService(uid: user.uid).updateUserData(0, 0, 0);
+      return _userFromFirebaseUser(user);
+    }
+    catch (e) {
+      print(e.message);
     }
   }
   // register with email and password
@@ -34,12 +60,14 @@ class AuthService {
       FirebaseUser user = result.user;
       //create a new document for the user with uid
       await DatabaseService(uid: user.uid).updateUserData(0, 0, 0);
+      await DatabaseService(uid: user.uid).changeUserData("",0,0,0);
       return _userFromFirebaseUser(user);      
     }
     catch(e)
     {
       print(e.toString());
       return null;
+
     }
   }
     // signin with email and password

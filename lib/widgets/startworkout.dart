@@ -13,12 +13,9 @@ class Start extends StatelessWidget {
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
     return StreamBuilder<UserData>(
-      stream: DatabaseService(uid:user.uid).userData,
+      stream: DatabaseService(uid:user.uid).fitnessData,
       builder:(context,snapshot){
       UserData userData = snapshot.data;
-      final nOofExercise = userData.noOfExercise;
-      final calories = userData.calories;
-      final minutes = userData.minutes;
       return Scaffold(
         backgroundColor: Colors.indigo[900],      
         appBar: AppBar(

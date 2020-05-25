@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:loginapp/modules/profilefull.dart';
 import 'package:loginapp/screens/authenticate/sign_in.dart';
 import 'package:loginapp/screens/authenticate/sign_up.dart';
 import 'package:loginapp/screens/home/home.dart';
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
             'signup': (context) => SignUpPage(),
             'signin': (context) => LoginPage(),
             'home': (context) => Home(),
-            'check': (context) => Wrapper()
+            'check': (context) => Wrapper(),
+            'profile': (context) => FullProfile()
           },
         title: 'Get Fit',
         debugShowCheckedModeBanner: false,

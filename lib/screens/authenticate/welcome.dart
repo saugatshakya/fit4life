@@ -31,53 +31,46 @@ class _WelcomePageState extends State<WelcomePage> {
           decoration: BoxDecoration(
             image:DecorationImage(image: AssetImage('assets/welcome.jpg'),fit:BoxFit.fill)
           ),),),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.end,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-              Container(margin: EdgeInsets.only(bottom:15),child:Text("Get Fit",style: TextStyle(color: Colors.white,fontFamily:'Heatwood',fontSize: 35))),
-              Container(margin: EdgeInsets.only(bottom:10),child:Text("Welcome to the family",style: TextStyle(color: Colors.white,fontFamily:'',fontSize: 20))),
-              Container(margin: EdgeInsets.only(bottom:200),child:Text("Stay Fit Stay Awesome",style: TextStyle(color: Colors.white,fontFamily:'',fontSize: 15))),
-              Container(
-                margin: EdgeInsets.fromLTRB(10,0,10,5),
-                width: 500,
-                height: 40,
-                decoration: BoxDecoration(
-                  color: Colors.red,
-                  borderRadius: BorderRadius.circular(20)
+          Container(
+            width: MediaQuery.of(context).size.width ,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Text("Get Fit",style: TextStyle(color: Colors.white,fontFamily:'Heatwood',fontSize: 40)),
+                Text("Welcome to the family",style: TextStyle(color: Colors.white,fontFamily:'',fontSize: 20)),
+                Text("Stay Fit Stay Awesome",style: TextStyle(color: Colors.white,fontFamily:'',fontSize: 15)),SizedBox(height:MediaQuery.of(context).size.height*0.4),
+                Container(
+                  margin: EdgeInsets.only(top:20),
+                  padding: EdgeInsets.all(10),
+                  height: 80,
+                  width: MediaQuery.of(context).size.width-20,
+                  child: RaisedButton.icon(
+                    icon:Icon(Icons.email,size:30, color:Colors.white),
+                    onPressed: (){Navigator.pushNamed(context,'signin');},
+                    color: Colors.red,
+                    label: Text("Sign up with Email",style:TextStyle(color:Colors.white),)
+                  ),
                 ),
-                child: FlatButton(
-                  onPressed: navigateToSignUp,
-                  child: Hero(tag:'signup',child: Text('Sign Up',style: TextStyle(color:Colors.white),)),
+                 Container(
+                   height: 30,
+                   child: FlatButton(
+                    onPressed: ()async{
+                      setState(() => loading = true);                  
+                      dynamic result = await _auth.signInAnon();
+                      if (result == null){
+                        setState(() => loading = false);                  
+                        print('error signing in');
+                      }
+                      else{
+                        print('signed in');
+                      }
+                    },
+                    child: Text('Sign in as a Guest',style: TextStyle(color:Colors.white),),
                 ),
-              ),
-              Container(
-                height: 30,
-                child: FlatButton(
-                  onPressed: navigateToSignIn,
-                  child: Hero(tag:"signin",child: Text('I Already Have An Account',style: TextStyle(color:Colors.white))),
-                ),
-              ),
-               Container(
-                 height: 30,
-                 padding: EdgeInsets.all(0),
-                 margin: EdgeInsets.only(bottom:20),
-                 child: FlatButton(
-                  onPressed: ()async{
-                    setState(() => loading = true);                  
-                    dynamic result = await _auth.signInAnon();
-                    if (result == null){
-                      setState(() => loading = false);                  
-                      print('error signing in');
-                    }
-                    else{
-                      print('signed in');
-                    }
-                  },
-                  child: Text('Sign in as a Guest',style: TextStyle(color:Colors.white),),
-              ),
-               ),
-            ],
+                 ),
+              ],
+            ),
           ),
       ]
       )

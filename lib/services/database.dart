@@ -7,12 +7,13 @@ class DatabaseService {
   
   //collection reference
   final CollectionReference fitnessCollection = Firestore.instance.collection('fitness');
+  final CollectionReference userDataCollection = Firestore.instance.collection('userData');
 
   Future updateUserData(int noOfExercises, int calories, int minutes)async {
     return await fitnessCollection.document(uid).setData({
       'noOfExercise': noOfExercises,
       'calories': calories,
-      'minutes': minutes
+      'minutes': minutes,
     });
   }
 
@@ -23,17 +24,34 @@ class DatabaseService {
       'minutes': miInit + mi
     });
   }
+
+  Future changeUserData(String name, int age, int height, int weight)async {
+    return await userDataCollection.document(uid).setData({
+      'name': name,
+      'age': age,
+      'height': height,
+      'weight': weight
+    });
+  }
   
-  Stream<UserData> get userData {
+  Stream<UserData> get fitnessData {
     return fitnessCollection.document(uid).snapshots().map(_userDataFromSnapshot);
+  }
+
+  Stream<UserData> get userData {
+    return userDataCollection.document(uid).snapshots().map(_userDataFromSnapshot);
   }
 
   UserData _userDataFromSnapshot(DocumentSnapshot snapshot) {
     return UserData(
       uid: uid,
+      name: snapshot.data['name'],
       calories: snapshot.data['calories'],
       noOfExercise: snapshot.data['noOfExercise'],
-      minutes: snapshot.data['minutes']
+      minutes: snapshot.data['minutes'],
+      age: snapshot.data['age'],
+      height: snapshot.data['height'],
+      weight: snapshot.data['weight']
     );
   }
 }

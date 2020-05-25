@@ -8,7 +8,7 @@ class SignUpPage extends StatefulWidget {
 }
 
 class _SignUpPageState extends State<SignUpPage> {
-    final AuthService _auth = AuthService();
+  final AuthService _auth = AuthService();
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   bool loading = false;
   String _email, _password;
@@ -50,6 +50,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     if(input.isEmpty){
                       return 'Provide an email';
                     }
+                    else return null;
                   },
                   decoration: InputDecoration(
                     labelText: 'Email',
@@ -72,6 +73,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     if(input.length < 6){
                       return 'Password needs to be Longer';
                     }
+                    else return null;
                   },
                   decoration: InputDecoration(
                     labelText: 'Password',

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:loginapp/models/workout.dart';
 import 'package:loginapp/widgets/list.dart';
-import 'package:steps_indicator/steps_indicator.dart';
 
 class WorkOutCard extends StatelessWidget {
   final WorkOut workout;
