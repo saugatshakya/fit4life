@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:loginapp/modules/exerciselist.dart';
 import 'package:loginapp/modules/nutrition.dart';
 import 'package:loginapp/modules/profile.dart';
+import 'package:loginapp/modules/profilefull.dart';
 import 'package:loginapp/modules/workout.dart';
 import 'package:loginapp/services/auth.dart';
 import 'package:loginapp/services/database.dart';
@@ -25,22 +26,22 @@ class _HomeState extends State<Home> {
   final tabs = [
     Profile(),
     WorkOut(),
-    ExerciseList(),
-    Nutrition()
+    Nutrition(),
+    FullProfile(),
   ];
 
   final color = [
     Colors.indigo[800],
-    Colors.red[800],
+    Colors.orange[800],
     Colors.green[800],
-    Colors.orange[800]
+    Colors.red[800],  
   ];
 
   final backgroundcolor = [
     Colors.indigo[300],
-    Colors.red[300],
+    Colors.orange[300],
     Colors.green[300],
-    Colors.orange[300]
+    Colors.red[300],
   ];
 
   @override
@@ -87,7 +88,7 @@ class _HomeState extends State<Home> {
             title:Text("Plan")
           ),
           BottomNavigationBarItem(
-          backgroundColor: Colors.red[800],
+          backgroundColor: Colors.orange[800],
             icon:Icon(
               Icons.fitness_center
             ),
@@ -96,16 +97,16 @@ class _HomeState extends State<Home> {
           BottomNavigationBarItem(
           backgroundColor: Colors.green[800],
             icon:Icon(
-              Icons.list
-            ),
-            title:Text("Exercise List")
-          ),
-          BottomNavigationBarItem(
-          backgroundColor: Colors.orange[800],
-            icon:Icon(
               Icons.fastfood
             ),
             title:Text("Nutrition")
+          ),
+          BottomNavigationBarItem(
+          backgroundColor: Colors.red[800],
+            icon:Icon(
+              Icons.person_outline
+            ),
+            title:Text("Profile")
           ),
         ]),
       ),

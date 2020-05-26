@@ -32,7 +32,7 @@ class _ExerciseListState extends State<ExerciseList> {
             ),
             onChanged:(input){setState(() {isSearching = true; _filterexercise(input);});},
             ),
-          ),
+          ),  
           Expanded(
                       child: SingleChildScrollView(
                     scrollDirection: Axis.vertical,

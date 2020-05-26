@@ -6,7 +6,7 @@ class WorkOut extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color:Colors.red[300],
+      color:Colors.orange[300],
       padding: EdgeInsets.fromLTRB(5,0,5,0),
       child: SingleChildScrollView(
         scrollDirection: Axis.vertical,

@@ -23,7 +23,8 @@ class FullProfile extends StatelessWidget {
               gradient: LinearGradient(colors: 
               [
                 Colors.red,
-                Colors.indigo[900]
+                Colors.indigo[900],
+                Colors.red[400]
               ],
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter
@@ -43,11 +44,13 @@ class FullProfile extends StatelessWidget {
                           child: Hero(
                             tag: "profile",
                             child: Container(
-                            height: MediaQuery.of(context).size.height*0.25,
+
+                            height: MediaQuery.of(context).size.height*0.22,
                             width: MediaQuery.of(context).size.width,
-                            decoration:BoxDecoration(color:Colors.white10,borderRadius: BorderRadius.vertical(top:Radius.circular(40))),
+                            decoration:BoxDecoration(color:Colors.white12,borderRadius: BorderRadius.vertical(top:Radius.circular(40))),
                             padding:EdgeInsets.only(top:30),
                             child:Column(
+                              mainAxisSize: MainAxisSize.max,
                                 children:[Text(
                                 "${DateFormat("EEEE").format(today)},${DateFormat("d MMMM").format(today)}",style:TextStyle(color:Colors.white,fontSize: 16,fontWeight: FontWeight.w600,decoration: TextDecoration.none)),
                                 SizedBox(height:20),
