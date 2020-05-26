@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:loginapp/modules/exerciselist.dart';
 import 'package:loginapp/modules/nutrition.dart';
 import 'package:loginapp/modules/profile.dart';
 import 'package:loginapp/modules/profilefull.dart';
