@@ -23,11 +23,8 @@ class FullProfile extends StatelessWidget {
               gradient: LinearGradient(colors: 
               [
                 Colors.red,
-                Colors.indigo[900],
-                Colors.red[400]
+                Colors.red[800]
               ],
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter
               )
             ),
             child: SafeArea(
@@ -44,10 +41,9 @@ class FullProfile extends StatelessWidget {
                           child: Hero(
                             tag: "profile",
                             child: Container(
-
                             height: MediaQuery.of(context).size.height*0.22,
                             width: MediaQuery.of(context).size.width,
-                            decoration:BoxDecoration(color:Colors.white12,borderRadius: BorderRadius.vertical(top:Radius.circular(40))),
+                            decoration:BoxDecoration(gradient:LinearGradient(colors:[Colors.red,Colors.redAccent[700]]),borderRadius: BorderRadius.vertical(top:Radius.circular(40))),
                             padding:EdgeInsets.only(top:30),
                             child:Column(
                               mainAxisSize: MainAxisSize.max,

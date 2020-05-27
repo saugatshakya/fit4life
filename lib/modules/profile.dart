@@ -20,7 +20,7 @@ class Profile extends StatelessWidget {
           if(snapshot.hasData){
             UserData userData = snapshot.data;
             return Scaffold(
-          backgroundColor: Colors.indigo[300],
+          backgroundColor: Colors.transparent,
           body: Stack(
       children:[
         Positioned(

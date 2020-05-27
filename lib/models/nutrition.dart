@@ -1,6 +1,11 @@
 class Nutrition {
-  final String name, desc, info, breaKfastImage, lunchImage, dinnerImage;
-  final List<String> descr, breakfast, lunch, dinner;
-  final int breakfastCal, lunchCal, dinnerCal;
-  Nutrition({this.name,this.desc,this.breakfast,this.lunch,this.dinner,this.breakfastCal,this.dinnerCal,this.lunchCal,this.breaKfastImage,this.lunchImage,this.dinnerImage});
+  final String name, desc, info;
+  final List<String> descr;
+  final List<Meal> breakfast,lunch,dinner;
+  Nutrition({this.name,this.desc,this.descr,this.info,this.breakfast,this.lunch,this.dinner});
+}
+class Meal{
+  final String name,recipe;
+  final int cal;
+  Meal({this.name,this.recipe,this.cal}); 
 }

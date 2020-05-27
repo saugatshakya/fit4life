@@ -29,18 +29,18 @@ class _HomeState extends State<Home> {
     FullProfile(),
   ];
 
-  final color = [
+  final List<Color>color = [
     Colors.indigo[800],
     Colors.orange[800],
     Colors.green[800],
     Colors.red[800],  
   ];
 
-  final backgroundcolor = [
-    Colors.indigo[300],
-    Colors.orange[300],
-    Colors.green[300],
-    Colors.red[300],
+  final List<Color>backgroundcolor = [
+    Colors.indigo,
+    Colors.orange,
+    Colors.green,
+    Colors.red,
   ];
 
   @override
@@ -56,60 +56,69 @@ class _HomeState extends State<Home> {
       UserData userData = snapshot.data;
       if(userData.name != "")
       {
-        return Scaffold(
-      backgroundColor: backgroundcolor[_currentIndex],
+        return Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(colors: 
+            [
+              backgroundcolor[_currentIndex],
+              color[_currentIndex]
+            ])
+          ),
+      child: Scaffold(
+      backgroundColor: Colors.transparent,
       appBar: AppBar(
-        backgroundColor: color[_currentIndex],
-        title:Text('Get Fit'),
-        actions: <Widget>[
-          FlatButton.icon(onPressed:()async{await _auth.signOut();}, icon:Icon(Icons.person, color: Colors.white, size: 30), label: Text('logout',style: TextStyle(color:Colors.white,fontSize: 16)))
-        ],
+          backgroundColor: color[_currentIndex],
+          title:Text('Get Fit'),
+          actions: <Widget>[
+            FlatButton.icon(onPressed:()async{await _auth.signOut();}, icon:Icon(Icons.person, color: Colors.white, size: 30), label: Text('logout',style: TextStyle(color:Colors.white,fontSize: 16)))
+          ],
       ),
       bottomNavigationBar: ClipRRect(
-        borderRadius: BorderRadius.vertical(top:Radius.circular(40)),
-          child: BottomNavigationBar(
-          currentIndex: _currentIndex,
-          onTap: (index){setState(() {_currentIndex = index; });},
-          selectedIconTheme: IconThemeData(
-            size: 30,
-            color:Colors.white
-          ),
-          unselectedIconTheme: IconThemeData(
-            size: 25,
-            color:Colors.white60
-          ),
-          items:[
-          BottomNavigationBarItem(
-          backgroundColor: Colors.indigo[800],
-            icon:Icon(
-              Icons.calendar_today
+          borderRadius: BorderRadius.vertical(top:Radius.circular(30)),
+            child: BottomNavigationBar(
+            currentIndex: _currentIndex,
+            onTap: (index){setState(() {_currentIndex = index; });},
+            selectedIconTheme: IconThemeData(
+              size: 30,
+              color:Colors.white
             ),
-            title:Text("Plan")
-          ),
-          BottomNavigationBarItem(
-          backgroundColor: Colors.orange[800],
-            icon:Icon(
-              Icons.fitness_center
+            unselectedIconTheme: IconThemeData(
+              size: 25,
+              color:Colors.white60
             ),
-            title:Text("Workouts")
-          ),
-          BottomNavigationBarItem(
-          backgroundColor: Colors.green[800],
-            icon:Icon(
-              Icons.fastfood
+            items:[
+            BottomNavigationBarItem(
+            backgroundColor: Colors.indigo[800],
+              icon:Icon(
+                Icons.calendar_today
+              ),
+              title:Text("Plan")
             ),
-            title:Text("Nutrition")
-          ),
-          BottomNavigationBarItem(
-          backgroundColor: Colors.red[800],
-            icon:Icon(
-              Icons.person_outline
+            BottomNavigationBarItem(
+            backgroundColor: Colors.orange[800],
+              icon:Icon(
+                Icons.fitness_center
+              ),
+              title:Text("Workouts")
             ),
-            title:Text("Profile")
-          ),
-        ]),
+            BottomNavigationBarItem(
+            backgroundColor: Colors.green[800],
+              icon:Icon(
+                Icons.fastfood
+              ),
+              title:Text("Nutrition")
+            ),
+            BottomNavigationBarItem(
+            backgroundColor: Colors.red[800],
+              icon:Icon(
+                Icons.person_outline
+              ),
+              title:Text("Profile")
+            ),
+          ]),
       ),
       body: tabs[_currentIndex],
+          ),
         );}
       else
       {

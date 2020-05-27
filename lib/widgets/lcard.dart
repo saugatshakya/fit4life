@@ -10,7 +10,7 @@ class Lcard extends StatelessWidget {
     return GestureDetector(
       onTap: (){ Navigator.of(context).push(MaterialPageRoute(builder: (context)=> List(workout: this.workout)));},
         child: Container(
-        decoration:BoxDecoration(color:Colors.white,borderRadius: BorderRadius.circular(20)),
+        decoration:BoxDecoration(gradient: LinearGradient(colors:[Colors.orange[800],Colors.orange[400]]),borderRadius: BorderRadius.circular(20)),
         margin: EdgeInsets.fromLTRB(10,10,10,0),
         child:Row(
           mainAxisAlignment: MainAxisAlignment.start,

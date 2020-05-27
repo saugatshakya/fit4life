@@ -27,7 +27,7 @@ class _ProfileState extends State<Profile> {
           final double bmi = userData.weight*10000/(userData.height*userData.height);
           return Column(
             children: [Container(
-            decoration: BoxDecoration(borderRadius: BorderRadius.vertical(bottom: Radius.circular(40)),color:Colors.white12,),
+            decoration: BoxDecoration(borderRadius: BorderRadius.vertical(bottom: Radius.circular(40)),gradient: LinearGradient(colors:[Colors.red,Colors.redAccent[700]])),
             height: MediaQuery.of(context).size.height*0.38,
             padding: EdgeInsets.only(top:20),
             width:MediaQuery.of(context).size.width,
@@ -89,7 +89,7 @@ class _ProfileState extends State<Profile> {
         padding: EdgeInsets.only(top:5),
         height: 90,
         width: MediaQuery.of(context).size.width-10,
-        decoration: BoxDecoration(color:Colors.white12,borderRadius:BorderRadius.circular(20)),
+        decoration: BoxDecoration(gradient: LinearGradient(colors:[Colors.red,Colors.redAccent[700]]),borderRadius:BorderRadius.circular(20)),
             child:Column(children:[
             Text("Body Mass Index(BMI): "+bmi.toStringAsFixed(2),style: TextStyle(color:Colors.white),),
             SizedBox(height:10),

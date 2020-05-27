@@ -24,8 +24,8 @@ class WorkOutCard extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children:[
                 Text(workout.name,style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold),),
-                Row(children: [Text('Cardio: ')]),
-                Row(children:[Text('Strength: ')]),
+                Text('Cardio: '+workout.cardio.toString()),
+                Text('Strength: '+workout.strength.toString()),
                 SizedBox(height: 16),
               ]
                 ))

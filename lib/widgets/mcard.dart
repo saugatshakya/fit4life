@@ -31,8 +31,10 @@ class Mcard extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children:[
           Text('Cardio: ',style:TextStyle(color:Colors.white,fontSize: 20,fontWeight: FontWeight.w600)),
+          Text('3',style:TextStyle(color:Colors.white,fontSize: 20,fontWeight: FontWeight.w600)),
           SizedBox(width:15),
           Text('Strength: ',style:TextStyle(color:Colors.white,fontSize: 20,fontWeight: FontWeight.w600)),
+          Text('2',style:TextStyle(color:Colors.white,fontSize: 20,fontWeight: FontWeight.w600)),
           ]),
           Row(children:[
             Container(),
@@ -66,8 +68,10 @@ class Mcard extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children:[
           Text('Cardio: ',style:TextStyle(color:Colors.white,fontSize: 20,fontWeight: FontWeight.w600)),
+          Text('3',style:TextStyle(color:Colors.white,fontSize: 20,fontWeight: FontWeight.w600)),
           SizedBox(width:15),
           Text('Strength: ',style:TextStyle(color:Colors.white,fontSize: 20,fontWeight: FontWeight.w600)),
+          Text('2',style:TextStyle(color:Colors.white,fontSize: 20,fontWeight: FontWeight.w600)),
           ]),
           Row(children:[
             Container(),
