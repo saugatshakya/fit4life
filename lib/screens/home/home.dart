@@ -68,9 +68,9 @@ class _HomeState extends State<Home> {
       backgroundColor: Colors.transparent,
       appBar: AppBar(
           backgroundColor: color[_currentIndex],
-          title:Text('Get Fit'),
+          title:Text('Get Fit',style: TextStyle(fontFamily: 'Heatwood',fontSize: 18,height: 6),),
           actions: <Widget>[
-            FlatButton.icon(onPressed:()async{await _auth.signOut();}, icon:Icon(Icons.person, color: Colors.white, size: 30), label: Text('logout',style: TextStyle(color:Colors.white,fontSize: 16)))
+            FlatButton.icon(onPressed:()async{await _auth.signOut();}, icon:Icon(Icons.person, color: Colors.white, size: 30), label: Text('logout',style: TextStyle(color:Colors.white,fontSize: 16,fontFamily:'Dalgona')))
           ],
       ),
       bottomNavigationBar: ClipRRect(

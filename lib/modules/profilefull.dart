@@ -37,18 +37,18 @@ class FullProfile extends StatelessWidget {
                 Positioned(
                   bottom:MediaQuery.of(context).size.height*0.001,
                         child: GestureDetector(
-                          onTap:(){Navigator.pop(context);},
+                          onTap:(){Navigator.popAndPushNamed(context,'home');},
                           child: Hero(
                             tag: "profile",
                             child: Container(
                             height: MediaQuery.of(context).size.height*0.22,
                             width: MediaQuery.of(context).size.width,
-                            decoration:BoxDecoration(gradient:LinearGradient(colors:[Colors.red,Colors.redAccent[700]]),borderRadius: BorderRadius.vertical(top:Radius.circular(40))),
-                            padding:EdgeInsets.only(top:30),
+                            decoration:BoxDecoration(gradient:LinearGradient(colors:[Colors.red,Colors.red[900]]),borderRadius: BorderRadius.vertical(top:Radius.circular(40))),
                             child:Column(
-                              mainAxisSize: MainAxisSize.max,
-                                children:[Text(
-                                "${DateFormat("EEEE").format(today)},${DateFormat("d MMMM").format(today)}",style:TextStyle(color:Colors.white,fontSize: 16,fontWeight: FontWeight.w600,decoration: TextDecoration.none)),
+                              mainAxisSize: MainAxisSize.min,
+                                children:[
+                                Container(height:30,child: IconButton(icon:Icon(Icons.keyboard_arrow_up,color: Colors.white), onPressed:(){Navigator.popAndPushNamed(context,'home');})),
+                                Text("${DateFormat("EEEE").format(today)},${DateFormat("d MMMM").format(today)}",style:TextStyle(color:Colors.white,fontSize: 16,fontWeight: FontWeight.w600,decoration: TextDecoration.none)),
                                 SizedBox(height:20),
                                 Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,

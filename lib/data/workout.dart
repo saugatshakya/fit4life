@@ -19,9 +19,10 @@ final workouts = [
     imagePath: "assets/muscle&strength.jpg",
     cardio: 1,
     strength: 3,
-    calories: 71,
-    minutes: 20,
-    exercises: 28
+    calories: 66,
+    minutes: 19,
+    exercises: 26,
+    exercise: [for (int i = 0; i< musclestrength.length; i++)musclestrength[i]]
   ),
   WorkOut(
     name: "Fit Life Starter",

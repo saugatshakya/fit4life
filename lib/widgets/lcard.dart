@@ -15,14 +15,14 @@ class Lcard extends StatelessWidget {
         child:Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
-            Container(height:150,width:180,child: ClipRRect(borderRadius: BorderRadius.horizontal(left:Radius.circular(20)),child: Image.asset(workout.imagePath,fit: BoxFit.cover))),
+            Container(height:150,width:160,child: ClipRRect(borderRadius: BorderRadius.horizontal(left:Radius.circular(20)),child: Image.asset(workout.imagePath,fit: BoxFit.cover))),
             SizedBox(width:10),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children:[
-              Text(workout.name,style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold),),
-              Text(workout.time,style: TextStyle(fontSize: 12),),
-              Row(children:[Text("Strength:"+workout.strength.toString()),SizedBox(width:20),Text("Cardio: "+workout.cardio.toString())])
+              Text(workout.name,style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: Colors.white,),),SizedBox(height:10),
+              Text(workout.time,style: TextStyle(fontSize: 12,color:Colors.white),),SizedBox(height:10),
+              Row(children:[Text("Strength:"+workout.strength.toString(),style:TextStyle(color:Colors.white,fontSize: 16),),SizedBox(width:20),Text("Cardio: "+workout.cardio.toString(),style: TextStyle(color:Colors.white,fontSize: 16),)])
             ]),
           ],
         )

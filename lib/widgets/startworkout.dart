@@ -20,7 +20,7 @@ class Start extends StatelessWidget {
         backgroundColor: Colors.indigo[900],      
         appBar: AppBar(
           backgroundColor: Colors.indigo[900],
-          title: Text("Reps"),
+          title: Text("Reps",style: TextStyle(fontFamily: 'Heatwood',height:5),),
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
