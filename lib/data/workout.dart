@@ -30,9 +30,10 @@ final workouts = [
     imagePath: "assets/fitlife.jpg",
     cardio: 1,
     strength: 1,
-    calories: 71,
-    minutes: 20,
-    exercises: 28
+    calories: 52,
+    minutes: 15,
+    exercises: 25,
+    exercise: [for (int i = 0; i< fitlife.length; i++)fitlife[i]]
   ),
   WorkOut(
     name: "Weight Loss Starter",
@@ -42,7 +43,8 @@ final workouts = [
     strength: 1,
     calories: 71,
     minutes: 20,
-    exercises: 28
+    exercises: 28,
+    exercise: [for (int i = 0; i< weightloss.length; i++)weightloss[i]]
   ),
 ];
 
@@ -53,10 +55,10 @@ final specialworkouts = [
     imagePath: "assets/fullbodygainer.jpg",
     cardio: 2,
     strength: 3,
-    calories: 34,
+    calories: 35,
     minutes: 10,
-    exercises: 12,
-    exercise: [for (int i = 0; i< fullbodygainer.length; i++)fullbodygainer[i]]
+    exercises: 13,
+    exercise: [for (int i = 0; i< fullbody.length; i++)fullbody[i]]
   ),
   WorkOut(
     name: "Insane Six Pack",
@@ -64,10 +66,10 @@ final specialworkouts = [
     imagePath: "assets/fullbodygainer.jpg",
     cardio: 3,
     strength: 2,
-    calories: 37,
+    calories: 34,
     minutes: 10,
-    exercises: 14,
-    exercise: [for (int i = 0; i< fullbodygainer.length; i++)fullbodygainer[i]]
+    exercises: 13,
+    exercise: [for (int i = 0; i< insanesixpack.length; i++)insanesixpack[i]]
   ),
   WorkOut(
     name: "Strong Back",

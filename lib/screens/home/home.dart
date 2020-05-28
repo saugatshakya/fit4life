@@ -76,6 +76,7 @@ class _HomeState extends State<Home> {
       bottomNavigationBar: ClipRRect(
           borderRadius: BorderRadius.vertical(top:Radius.circular(30)),
             child: BottomNavigationBar(
+            type: BottomNavigationBarType.shifting,
             currentIndex: _currentIndex,
             onTap: (index){setState(() {_currentIndex = index; });},
             selectedIconTheme: IconThemeData(
@@ -240,7 +241,7 @@ class _HomeState extends State<Home> {
               ),SizedBox(height:15),
               RaisedButton(onPressed: ()async{
                 if(_formKey.currentState.validate()){
-                  await DatabaseService(uid: user.uid).changeUserData(_name, _age, _height, _weight);
+                  await DatabaseService(uid: user.uid).changeUserData(_name, _age, _height, _weight,userData.stepstoday);
                 }
               },child: Text("Proceed"),)
               ]

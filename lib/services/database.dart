@@ -25,12 +25,13 @@ class DatabaseService {
     });
   }
 
-  Future changeUserData(String name, int age, int height, int weight)async {
+  Future changeUserData(String name, int age, int height, int weight,int stepstoday)async {
     return await userDataCollection.document(uid).setData({
       'name': name,
       'age': age,
       'height': height,
-      'weight': weight
+      'weight': weight,
+      'stepstoday': stepstoday
     });
   }
   
@@ -51,7 +52,8 @@ class DatabaseService {
       minutes: snapshot.data['minutes'],
       age: snapshot.data['age'],
       height: snapshot.data['height'],
-      weight: snapshot.data['weight']
+      weight: snapshot.data['weight'],
+      stepstoday: snapshot.data['stepstoday']
     );
   }
 }
