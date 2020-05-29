@@ -75,9 +75,15 @@ class Profile extends StatelessWidget {
                   for (int i = 0; i< workouts.length; i++) WorkOutCard(workout: workouts[i])
                 ]
               ),)),
-              SizedBox(height:2),
-              Expanded(child:Mcard()),
-            ],)
+              Expanded(
+                  child: SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                    child: Row(
+                    children:[
+                  for(int i = 0;i<upperlower.length;i++)Mcard(workout: upperlower[i]),
+      ]),
+                ),
+              )],)
           ),)
       ]
           )

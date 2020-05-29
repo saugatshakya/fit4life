@@ -52,7 +52,7 @@ final specialworkouts = [
   WorkOut(
     name: "Full Body",
     time: "18 weeks",
-    imagePath: "assets/fullbodygainer.jpg",
+    imagePath: "assets/fullbody.jpg",
     cardio: 2,
     strength: 3,
     calories: 35,
@@ -63,7 +63,7 @@ final specialworkouts = [
   WorkOut(
     name: "Insane Six Pack",
     time: "12 weeks",
-    imagePath: "assets/fullbodygainer.jpg",
+    imagePath: "assets/insanesixpack.jpg",
     cardio: 3,
     strength: 2,
     calories: 34,
@@ -74,45 +74,67 @@ final specialworkouts = [
   WorkOut(
     name: "Strong Back",
     time: "12 weeks",
-    imagePath: "assets/fullbodygainer.jpg",
+    imagePath: "assets/strongback.jpg",
     cardio: 1,
     strength: 3,
-    calories: 35,
+    calories: 36,
     minutes: 10,
     exercises: 13,
-    exercise: [for (int i = 0; i< fullbodygainer.length; i++)fullbodygainer[i]]
+    exercise: [for (int i = 0; i< strongback.length; i++)strongback[i]]
   ),
   WorkOut(
-    name: "Full Body Streetching",
+    name: "Full Body Stretching",
     time: "22 weeks",
-    imagePath: "assets/fullbodygainer.jpg",
+    imagePath: "assets/fullbodystretching.jpeg",
     cardio: 2,
     strength: 2,
-    calories: 10,
+    calories: 9,
     minutes: 10,
     exercises: 13,
-    exercise: [for (int i = 0; i< fullbodygainer.length; i++)fullbodygainer[i]]
+    exercise: [for (int i = 0; i< fullbodystretching.length; i++)fullbodystretching[i]]
   ),
   WorkOut(
-    name: "Upper Body Streetching",
+    name: "Upper Body Stretching",
     time: "22 weeks",
-    imagePath: "assets/fullbodygainer.jpg",
+    imagePath: "assets/upperbodystretching.jpg",
     cardio: 2,
     strength: 2,
     calories: 10,
     minutes: 10,
     exercises: 12,
-    exercise: [for (int i = 0; i< fullbodygainer.length; i++)fullbodygainer[i]]
+    exercise: [for (int i = 0; i< upperbodystretching.length; i++)upperbodystretching[i]]
   ),
   WorkOut(
-    name: "Lower Body Streetching",
+    name: "Lower Body Stretching",
     time: "22 weeks",
-    imagePath: "assets/fullbodygainer.jpg",
+    imagePath: "assets/lowerbodystretching.jpg",
+    cardio: 2,
+    strength: 2,
+    calories: 9,
+    minutes: 10,
+    exercises: 12,
+    exercise: [for (int i = 0; i< lowerbodystretching.length; i++)lowerbodystretching[i]]
+  ),
+];
+final upperlower = [
+  WorkOut(
+    name: "Upper Body",
+    time: "6 weeks",
+    cardio: 2,
+    strength: 2,
+    calories: 9,
+    minutes: 10,
+    exercises: 13,
+    exercise: [for (int i = 0; i< upperbodystretching.length; i++)upperbodystretching[i]]
+  ),
+  WorkOut(
+    name: "Lower Body",
+    time: "6 weeks",
     cardio: 2,
     strength: 2,
     calories: 10,
     minutes: 10,
     exercises: 12,
-    exercise: [for (int i = 0; i< fullbodygainer.length; i++)fullbodygainer[i]]
+    exercise: [for (int i = 0; i< lowerbodystretching.length; i++)lowerbodystretching[i]]
   ),
 ];

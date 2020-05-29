@@ -902,7 +902,7 @@ final fullbody = [
     breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
   ),
   Exercise(
-    name: "Sumo Swuat",
+    name: "Sumo Squat",
     imagePath: "assets/sumo_squat.jpg",
     videoPath: "assets/sumo_squat.gif",
     reps: "18",
@@ -1009,17 +1009,17 @@ final insanesixpack = [
     breathing: "Exhale while you lift your hips and knees. Hold the position. After several breaths, inhale while returning to the starting position."
   ),
   Exercise(
-    name: "Elavated Crunches",
-    imagePath: "assets/elavated_crunches.jpg",
-    videoPath: "assets/elavated_crunches.gif",
+    name: "Elevated Crunches",
+    imagePath: "assets/elevated_crunches.jpg",
+    videoPath: "assets/elevated_crunches.gif",
     reps: "24",
     hint: "Start in a side plank position. Be sure that your elbow is directly underneath your shoulder and your feet are stacked on top of eachother. Lower your body down untill just before your hip touches the ground. Raise your body back up into a side plank position using your underside obliques.",
     breathing: "Exhale while you lift your hips and knees. Hold the position. After several breaths, inhale while returning to the starting position."
   ),
   Exercise(
-    name: "Twisted Mountain Climber",
-    imagePath: "assets/twisted_mountain_climber.jpg",
-    videoPath: "assets/twisted_mountain_climber.gif",
+    name: "Twisted Mountain Climbers",
+    imagePath: "assets/twisted_mountain_climbers.jpg",
+    videoPath: "assets/twisted_mountain_climbers.gif",
     reps: "22",
     hint: "Start in a side plank position. Be sure that your elbow is directly underneath your shoulder and your feet are stacked on top of eachother. Lower your body down untill just before your hip touches the ground. Raise your body back up into a side plank position using your underside obliques.",
     breathing: "Exhale while you lift your hips and knees. Hold the position. After several breaths, inhale while returning to the starting position."
@@ -1036,7 +1036,7 @@ final insanesixpack = [
     name: "Plank",
     imagePath: "assets/plank.jpg",
     videoPath: "assets/plank.gif",
-    reps: "35 secs",
+    reps: "35s",
     hint: "Start in a side plank position. Be sure that your elbow is directly underneath your shoulder and your feet are stacked on top of eachother. Lower your body down untill just before your hip touches the ground. Raise your body back up into a side plank position using your underside obliques.",
     breathing: "Exhale while you lift your hips and knees. Hold the position. After several breaths, inhale while returning to the starting position."
   ),
@@ -1050,10 +1050,467 @@ final insanesixpack = [
   ),
   Exercise(
     name: "Bicycle Crunches",
-    imagePath: "assets/bicycle_crunches.jpg",
-    videoPath: "assets/bicycle_crunches.gif",
+    imagePath: "assets/bicycle_crunch.jpg",
+    videoPath: "assets/bicycle_crunch.gif",
     reps: "24",
     hint: "Sit on your bones as you lift your feet from the floor, keeping your knees bent. Elongate and straighten your spine at a 45-degree angle from the floor, creating a V shape with your torso and thighs. Reach your arms straight out in front, interlacing your fingers or clasping your hands together. Use your abdominals to twist to the right, then back to center, and then to the left.",
     breathing: "Exhale with each twist, and inhale to return to the center"
+  ),
+];
+final strongback = [
+  Exercise(
+    name: "Extended Arm Circles",
+    imagePath: "assets/extended_arm_circles.jpg",
+    videoPath: "assets/extended_arm_circles.gif",
+    reps: "18",
+    hint: "Sit on your bones as you lift your feet from the floor, keeping your knees bent. Elongate and straighten your spine at a 45-degree angle from the floor, creating a V shape with your torso and thighs. Reach your arms straight out in front, interlacing your fingers or clasping your hands together. Use your abdominals to twist to the right, then back to center, and then to the left.",
+    breathing: "Exhale with each twist, and inhale to return to the center"
+  ),
+  Exercise(
+    name: "Bridge Marching",
+    imagePath: "assets/bridge_marching.jpg",
+    videoPath: "assets/bridge_marching.gif",
+    reps: "19",
+    hint: "Start in a brige, pelvis and shoulders froming a straight line. Lift knee toward chest, until hip is at 90 degrees. Lower and repeat with other knee. Lower your spine to the ground one vertebra at a time.",
+    breathing: "Inhale as you rock your pelvis towards your tailbone and exhale as you rock your pelvis towards your belly button. Exhale as you lift the foot and inhale as you place the leg back on the ground. Exhale as you lower your spine to the ground."
+  ),  
+    Exercise(
+    name: "The Hundred",
+    imagePath: "assets/the_hundred.jpg",
+    videoPath: "assets/the_hundred.gif",
+    reps: "28",
+    hint: "Sit on your bones as you lift your feet from the floor, keeping your knees bent. Elongate and straighten your spine at a 45-degree angle from the floor, creating a V shape with your torso and thighs. Reach your arms straight out in front, interlacing your fingers or clasping your hands together. Use your abdominals to twist to the right, then back to center, and then to the left.",
+    breathing: "Exhale with each twist, and inhale to return to the center"
+  ),
+    Exercise(
+    name: "Twisted Mountain Climbers",
+    imagePath: "assets/twisted_mountain_climbers.jpg",
+    videoPath: "assets/twisted_mountain_climbers.gif",
+    reps: "22",
+    hint: "Start in a side plank position. Be sure that your elbow is directly underneath your shoulder and your feet are stacked on top of eachother. Lower your body down untill just before your hip touches the ground. Raise your body back up into a side plank position using your underside obliques.",
+    breathing: "Exhale while you lift your hips and knees. Hold the position. After several breaths, inhale while returning to the starting position."
+  ),
+    Exercise(
+    name: "Bird Dog",
+    imagePath: "assets/bird_dog.jpg",
+    videoPath: "assets/bird_dog.gif",
+    reps: "14",
+    hint: "Begin on all fours with your hands directly under your shoulders and your knees directly under your hips. Pull your abs in to your spine. Keeping your back pelvis still and stable, reach your right arm forward and left leg back. Don't allow the pelvis to rock side to side as you move your leg behind you. Focus on not letting the rib cage sag toward the floor. Reach through your left heel to engage the muscles in the back of the leg and your butt. Return to the starting position, placing your hand and knee on the floor. Repeat on the other side to complete one rep.",
+    breathing: "Inhale and exhale while simultaneously lifting your right leg and your left arm. Maintain smooth and even breathing."
+  ),
+  Exercise(
+    name: "Diamond Push-Ups",
+    imagePath: "assets/diamond_push_ups.jpg",
+    videoPath: "assets/diamond_push_ups.gif",
+    reps: "12",
+    hint: "Place your hands close together so your thumbs and index fingers form a triangle on the floor and perform push-ups",
+    breathing: "Breathe in going down. Breathe out going up"
+  ),
+    Exercise(
+    name: "Wide Arm Push-Ups",
+    imagePath: "assets/wide_arm_push_ups.jpg",
+    videoPath: "assets/wide_arm_push_ups.gif",
+    reps: "18",
+    hint: "On your back with arms crossed in front of your chest or behind your head. Exhale as you lift your shoulder blades to a 45 degree angle. While keeping your core contracted, inhale on the return. You can have a partner to keep your feet on the floor.",
+    breathing: "Inhale and exhale as mentioned in the instruction."
+  ),
+  Exercise(
+    name: "Toe Touches",
+    imagePath: "assets/toe_touches.jpg",
+    videoPath: "assets/toe_touches.gif",
+    reps: "16",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+  Exercise(
+    name: "Y Raise",
+    imagePath: "assets/y_raise.jpg",
+    videoPath: "assets/y_raise.gif",
+    reps: "16",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+  Exercise(
+    name: "Easy Side Plank",
+    imagePath: "assets/easy_side_plank.jpg",
+    videoPath: "assets/easy_side_plank.gif",
+    reps: "18",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+  Exercise(
+    name: "Rear Lunges",
+    imagePath: "assets/rear_lunges.jpg",
+    videoPath: "assets/rear_lunges.gif",
+    reps: "24",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+  Exercise(
+    name: "Sumo Squat",
+    imagePath: "assets/sumo_squat.jpg",
+    videoPath: "assets/sumo_squat.gif",
+    reps: "18",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+  Exercise(
+    name: "Prisoner's Squat",
+    imagePath: "assets/prisoners_squat.jpg",
+    videoPath: "assets/prisoners_squat.gif",
+    reps: "22",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+];
+
+final fullbodystretching = [
+    Exercise(
+    name: "Bent Over Stretch",
+    imagePath: "assets/bent_over_stretch.jpg",
+    videoPath: "assets/bent_over_stretch.gif",
+    reps: "24",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Windmill",
+    imagePath: "assets/windmill.jpg",
+    videoPath: "assets/windmill.gif",
+    reps: "18",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Front Shoulder Circles",
+    imagePath: "assets/front_shoulder_circles.jpg",
+    videoPath: "assets/front_shoulder_circles.gif",
+    reps: "16",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Yoga Backbend",
+    imagePath: "assets/yoga_backbend.jpg",
+    videoPath: "assets/yoga_backbend.gif",
+    reps: "24",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Armpit Check Stretch",
+    imagePath: "assets/armpit_check_stretch.jpg",
+    videoPath: "assets/armpit_check_stretch.gif",
+    reps: "18",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Shoulder Opener",
+    imagePath: "assets/shoulder_opener.jpg",
+    videoPath: "assets/shoulder_opener.gif",
+    reps: "22",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Table Pose",
+    imagePath: "assets/table_pose.jpg",
+    videoPath: "assets/table_pose.gif",
+    reps: "24",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Reclined Cobler's Pose",
+    imagePath: "assets/reclined_cobblers_pose.jpg",
+    videoPath: "assets/reclined_cobblers_pose.gif",
+    reps: "22",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Deep Breathing",
+    imagePath: "assets/deep_breathing.jpg",
+    videoPath: "assets/deep_breathing.gif",
+    reps: "18",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Swan Pose",
+    imagePath: "assets/swan_pose.jpg",
+    videoPath: "assets/swan_pose.gif",
+    reps: "22",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Lying Glute Stretch",
+    imagePath: "assets/lying_glute_stretch.jpg",
+    videoPath: "assets/lying_glute_stretch.gif",
+    reps: "24",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+  Exercise(
+    name: "Sumo Squat",
+    imagePath: "assets/sumo_squat.jpg",
+    videoPath: "assets/sumo_squat.gif",
+    reps: "18",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Side Neck Stretch",
+    imagePath: "assets/side_neck_stretch.jpg",
+    videoPath: "assets/side_neck_stretch.gif",
+    reps: "18",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+];
+final upperbodystretching = [
+   Exercise(
+    name: "Bent Over Twist",
+    imagePath: "assets/bent_over_twist.jpg",
+    videoPath: "assets/bent_over_twist.gif",
+    reps: "24",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+   Exercise(
+    name: "Child Pose",
+    imagePath: "assets/child_pose.jpg",
+    videoPath: "assets/child_pose.gif",
+    reps: "18",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+     Exercise(
+    name: "Backward Shoulder Circles",
+    imagePath: "assets/backward_shoulder_circles.jpg",
+    videoPath: "assets/backward_shoulder_circles.gif",
+    reps: "22",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+     Exercise(
+    name: "Child Pose",
+    imagePath: "assets/child_pose.jpg",
+    videoPath: "assets/child_pose.gif",
+    reps: "24",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+  Exercise(
+    name: "Windmill",
+    imagePath: "assets/windmill.jpg",
+    videoPath: "assets/windmill.gif",
+    reps: "22",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+  Exercise(
+    name: "Back Neck Stretch",
+    imagePath: "assets/back_neck_stretch.jpg",
+    videoPath: "assets/back_neck_stretch.gif",
+    reps: "18",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+  Exercise(
+    name: "Cat Cow Pose",
+    imagePath: "assets/cat_cow_pose.jpg",
+    videoPath: "assets/cat_cow_pose.gif",
+    reps: "22",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+  Exercise(
+    name: "Front Wrist Stretch",
+    imagePath: "assets/front_wrist_stretch.jpg",
+    videoPath: "assets/front_wrist_stretch.gif",
+    reps: "24",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+  Exercise(
+    name: "Forward Arm Circles",
+    imagePath: "assets/backward_shoulder_circles.jpg",
+    videoPath: "assets/backward_shoulder_circles.gif",
+    reps: "18",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Table Pose",
+    imagePath: "assets/table_pose.jpg",
+    videoPath: "assets/tabke_Pose.gif",
+    reps: "24",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Seated Forward Bend",
+    imagePath: "assets/seated_forward_bend.jpg",
+    videoPath: "assets/seated_forward_bend.gif",
+    reps: "22",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Standing Chest Stretch",
+    imagePath: "assets/standing_chest_stretch.jpg",
+    videoPath: "assets/standing_chest_stretch.gif",
+    reps: "24",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Backward Arm Circles",
+    imagePath: "assets/backward_shoulder_circles.jpg",
+    videoPath: "assets/backward_shoulder_circles.gif",
+    reps: "18",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Back Wrist Stretch",
+    imagePath: "assets/back_wrist_stretch.jpg",
+    videoPath: "assets/back_wrist_stretch.gif",
+    reps: "22",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Fish Pose",
+    imagePath: "assets/fish_pose.jpg",
+    videoPath: "assets/fish_pose.gif",
+    reps: "24",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Plow Pose",
+    imagePath: "assets/plow_pose.jpg",
+    videoPath: "assets/plow_pose.gif",
+    reps: "22",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+];
+final lowerbodystretching = [
+    Exercise(
+    name: "Forward Bend",
+    imagePath: "assets/forward_bend.jpg",
+    videoPath: "assets/forward_bend.gif",
+    reps: "24",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Wide Leg Bend",
+    imagePath: "assets/wide_leg_bend.jpg",
+    videoPath: "assets/wide_leg_bend.gif",
+    reps: "22",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Lazy Pigeon",
+    imagePath: "assets/supermans.jpg",
+    videoPath: "assets/supermans.gif",
+    reps: "18",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Sprinter's Calf Stretch",
+    imagePath: "assets/sprinters_calf_stretch.jpg",
+    videoPath: "assets/sprinters_calf_stretch.gif",
+    reps: "20",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Lying Glute Stretch",
+    imagePath: "assets/lying_glute_stretch.jpg",
+    videoPath: "assets/lying_glute_stretch.gif",
+    reps: "22",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Triangle Pose",
+    imagePath: "assets/triangle_pose.jpg",
+    videoPath: "assets/triangle_pose.gif",
+    reps: "24",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Windmill",
+    imagePath: "assets/windmill.jpg",
+    videoPath: "assets/windmill.gif",
+    reps: "18",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Warrioir II",
+    imagePath: "assets/warrior_2.jpg",
+    videoPath: "assets/warrior_2.gif",
+    reps: "20",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Alternating Side Lunge",
+    imagePath: "assets/alternating_side_lunge.jpg",
+    videoPath: "assets/alternating_side_lunge.gif",
+    reps: "22",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Supine Hamstring Stretch",
+    imagePath: "assets/supine_hamstring_stretch.jpg",
+    videoPath: "assets/supine_hamstring_stretch.gif",
+    reps: "24",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Deep Squat Stretch",
+    imagePath: "assets/deep_squat_stretch.jpg",
+    videoPath: "assets/deep_squat_stretch.gif",
+    reps: "22",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Quadricep Stretch",
+    imagePath: "assets/quadricep_stretch.jpg",
+    videoPath: "assets/quadricep_stretch.gif",
+    reps: "20",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+    Exercise(
+    name: "Windmill",
+    imagePath: "assets/windmill.jpg",
+    videoPath: "assets/windmill.gif",
+    reps: "18",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
+  ),
+  Exercise(
+    name: "Bent Over Stretch",
+    imagePath: "assets/bent_over_stretch.jpg",
+    videoPath: "assets/bent_over_stretch.gif",
+    reps: "24",
+    hint: "Lie on your back and lift your legs and arms up so they are extended toward the ceiling. Lift your upper back off the floor, reaching your hands toward your feet. Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the floor and lower back pressed into the floor. Repeat the crunch motion to completer one rep.",
+    breathing: "Breathe in and exhale as you descend. Inhale while making your way back up and avoid holding breath at the bottom of the toe touch."
   ),
 ];
